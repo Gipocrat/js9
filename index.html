@@ -9,6 +9,7 @@
   <body>
     <div class="products">
         <!-- <div class="products__card">
+          <img class="card__delete" src="../img/delete.svg" alt="">
             <div class="card__image-block">
                 <img class="card__image" src='../img/2.webp' alt="">
                 </div>
@@ -23,7 +24,36 @@
                     <div class="card__cost">450</div>
                 </div>
             </div> -->
+        <div class="products__add products__card">
+          <img class="img__add" src='../img/add.svg' alt="">
+          <div class="form__fields">
+            <form class="add__form">
+              <label>Путь до изобр.</label>
+              <input class="form__image-path text-field" id="image-path" type="text" required>
+              <label>Оценка товара</label>
+              <input class="form__rating text-field" id="rating" type="text" required>
+              <label>Калл. товара</label>
+              <input class="form__value text-field" id="value" type="text" required>
+              <label>Название товара</label>
+              <input class="form__name text-field" id="name" type="text" required>
+              <label>Цена товара</label>
+              <input class="form__cost text-field" id="cost" type="text" required>
+              <div class="button-block">
+                <button class="form__button" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
         </div>
+    </div>
+    <div class="modal">
+            <div class="modal__title">
+              <h2>Точно хотите удалить товар?</h2>
+            </div>
+            <div class="modal__buttons">
+              <button class="button__yes modal__button" id="yes">Да</button>
+              <button class="button__no modal__button" id="no">Нет</button>
+            </div>
+          </div>
     <script src="./script.js"></script>
   </body>
 </html>
